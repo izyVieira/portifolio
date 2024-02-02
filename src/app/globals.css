@@ -12,6 +12,7 @@
 body {
     background-color: #66196D;
     color: white;
+    overflow: auto;
 }
 
 .navBar {
@@ -20,8 +21,8 @@ body {
 
 
 .container {
-    display: flex;
     position: relative;
+    overflow: auto;
 }
 
 .circle {
@@ -30,7 +31,6 @@ body {
     height: 250px;
     background: linear-gradient(to bottom, #9E34A7 30%, #dd47eb 10%);
     filter: blur(90px);
-    margin-right: 100%;
     margin-top:-80px;
     z-index: -1;
 
@@ -40,10 +40,19 @@ body {
     }
 
     @screen md {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 
+    @screen lg {
+        width: 200px;
+        height: 200px;
+    }
+
+    @screen xl {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .container-about {

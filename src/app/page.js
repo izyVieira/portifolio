@@ -9,6 +9,7 @@ let Home = () => {
             <div className="container">
                 <div className="circle"></div>
                 <About/>
+                
             </div>
         </>
     )
