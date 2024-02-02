@@ -8,9 +8,7 @@ let Home = () => {
             <NavBar/>
             <div className="container">
                 <div className="circle"></div>
-                <div className="text-over-circle border w-100">
-                    <About></About>
-                </div>
+                <About/>
             </div>
         </>
     )
