@@ -2,3 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+.app-container {
+    background: #66196D;
+    min-height: 940px;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: #66196D;
+}
+
+.navBar {
+    background-color: #66196D;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 40px;
+}
+
+.circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #9E34A7 30%, #dd47eb 10%);
+    filter: blur(90px);
+}
+
+.text-over-circle {
+    color: white;
+    font-size: 24px;
+    z-index: 1;
+}
+
