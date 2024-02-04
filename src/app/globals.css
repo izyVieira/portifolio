@@ -88,3 +88,7 @@ body {
 .container-about {
     margin-top: 80px;
 }
+
+.rentagulo-degrade {
+    background: linear-gradient(to bottom, purple, black);
+}

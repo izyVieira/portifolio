@@ -47,7 +47,7 @@ let About = () => {
 
             <div className="flex items-center justify-center border"> 
                 <div className="bg-black bg-opacity-50 p-6 rounded-lg  mt-10" 
-                    style={{maxWidth: "75%"}}> {/* Adicionei essa propriedade */}
+                    style={{maxWidth: "65%"}}>
                     <h3 className="text-white text-3xl mb-4">Sobre mim</h3>
                     <p className="text-white">
                         Sou uma desenvolvedora web especializada em tecnologias de front-end e back-end, 
@@ -60,7 +60,6 @@ let About = () => {
                 </div>
             </div>
 
-        
         </>
         
     )
