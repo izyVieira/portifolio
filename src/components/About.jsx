@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import foto2 from '../../public/foto2.jpg'
+import foto1 from '../../public/foto1.jpg'
 
 let About = () => {
 
@@ -34,9 +35,11 @@ let About = () => {
                     </p>
 
                     <button 
-                        className="
-                            bg-purple-500 hover:bg-purple-950 text-white font-bold 
+                        className="hover:bg-purple-950 text-white font-bold 
                             py-2 px-4 rounded-full mt-8"
+                        style={{
+                            background: '#A12AAB'
+                        }}
                         onClick={{}}>
                         Contate-me
                     </button>
@@ -46,15 +49,30 @@ let About = () => {
             </div>
 
             <div className="flex items-center justify-center"> 
+
                 <div className="bg-black bg-opacity-50 p-6 rounded-lg  mt-10" 
                     style={{maxWidth: "65%"}}>
+
                     <h3 className="text-white text-3xl mb-4">Sobre mim</h3>
-                    <div className="bg-gradient-to-r from-purple-500 p-6 rounded-lg">
-                        <p>Especialização em Desenvolvimento Web:
-                            Proficiência em front-end e back-end.
-                            Tecnologias dominadas: Node.js, JavaScript, HTML/CSS, React, Next.js, MongoDB e MySQL.</p>
+
+                    <div className="flex space-x-12">
+                        <div className="mb-4 sm:mb-0">
+                            <Image className="rounded-full"
+                                src={foto1}
+                                width='250'
+                                height='250'
+                            />
+                        </div>
+
+                        <div className="bg-gradient-to-r from-fuchsia-700 p-6 rounded-lg">
+                            <p>Especialização em Desenvolvimento Web:
+                                Proficiência em front-end e back-end.
+                                Tecnologias dominadas: Node.js, JavaScript, HTML/CSS, React, Next.js, MongoDB e MySQL.</p>
+                        </div>
                     </div>
+                    
                 </div>
+
             </div>
 
         </>
