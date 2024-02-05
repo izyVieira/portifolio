@@ -12,7 +12,7 @@ let Experience = () => {
 
                     <div className="flex items-center justify-center flex-col text-center">
                         <div
-                            className="rounded-full bg-purple-500 flex-shrink-0"
+                            className="rounded-full bg-fuchsia-500 flex-shrink-0"
                             style={{
                                 width: '50px',
                                 height: '50px',
@@ -31,7 +31,7 @@ let Experience = () => {
 
                     <div className="flex items-center justify-center flex-col text-center">
                         <div
-                            className="rounded-full bg-purple-500 flex-shrink-0"
+                            className="rounded-full bg-fuchsia-500 flex-shrink-0"
                             style={{
                                 width: '50px',
                                 height: '50px',
@@ -49,28 +49,28 @@ let Experience = () => {
                     </div>
 
                     <div className="flex items-center justify-center flex-col" display="flex" justifyContent="center" alignItems="center"> 
-                        <div className="rounded-full bg-purple-500 flex-1 flex-shrink-0 align-items-center"> 
+                        <div className="rounded-full bg-fuchsia-500 flex-1 flex-shrink-0 align-items-center"> 
                             <FaReact size="2em"/>
                         </div>
                         <p className="text-white text-center text-xs p-1">React</p>
                     </div>
 
                     <div className="flex items-center justify-center flex-col" display="flex" justifyContent="center" alignItems="center"> 
-                        <div className="rounded-full bg-purple-500 flex-1 flex-shrink-0 align-items-center"> 
+                        <div className="rounded-full bg-fuchsia-500 flex-1 flex-shrink-0 align-items-center"> 
                             <FaNodeJs size="2em"/>
                         </div>
                         <p className="text-white text-center text-xs p-1">Node.js</p>
                     </div>
 
                     <div className="flex items-center justify-center flex-col" display="flex" justifyContent="center" alignItems="center"> 
-                        <div className="rounded-full bg-purple-500 flex-1 flex-shrink-0 align-items-center"> 
+                        <div className="rounded-full bg-fuchsia-500 flex-1 flex-shrink-0 align-items-center"> 
                             <IoLogoJavascript size="2em"/>
                         </div>
                         <p className="text-white text-center text-xs p-1">JavaScript</p>
                     </div>
 
                     <div className="flex items-center justify-center flex-col" display="flex" justifyContent="center" alignItems="center"> 
-                        <div className="rounded-full bg-purple-500 flex-1 flex-shrink-0 align-items-center"> 
+                        <div className="rounded-full bg-fuchsia-500 flex-1 flex-shrink-0 align-items-center"> 
                             <BiLogoMongodb size="2em"/>
                         </div>
                         <p className="text-white text-center text-xs p-1">MongoDB</p>
@@ -78,7 +78,7 @@ let Experience = () => {
                 </div>
 
                 <div>
-                    <div className="bg-gradient-to-r from-purple-500 p-6 rounded-lg">
+                    <div className="bg-gradient-to-r from-fuchsia-500 p-6 rounded-lg">
                         <p>Dual7 Teconologia em Sistemas</p>
                         <p><strong>2021 - Atual</strong></p>
                         <span>Desenvolvedora Pleno Full-Stack</span>

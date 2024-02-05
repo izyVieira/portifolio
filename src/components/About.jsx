@@ -68,11 +68,13 @@ let About = () => {
                             />
                         </div>
 
-                        <div className="bg-gradient-to-r from-fuchsia-700 p-6 rounded-lg">
+                        <div className="bg-gradient-to-r from-fuchsia-700 p-6 rounded-lg" style={{display: 'inline-block'}}>
                             <p>Especialização em Desenvolvimento Web:
                                 Proficiência em front-end e back-end.
-                                Tecnologias dominadas: Node.js, JavaScript, HTML/CSS, React, Next.js, MongoDB e MySQL.</p>
+                                Tecnologias dominadas: Node.js, JavaScript, HTML/CSS, React, Next.js, MongoDB e MySQL.
+                            </p>
                         </div>
+
                     </div>
                     
                 </div>
