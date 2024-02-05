@@ -8,7 +8,7 @@ let Experience = () => {
     return (
         <div className="mt-16">
             
-            <div className="flex items-center justify-center space-x-28 mb-8">
+            <div className="flex flex-wrap items-center justify-center space-x-28 mb-8">
                 <h1 className="text-white">Experiências</h1>
                 <div className="grid grid-cols-3 space-y-"> 
                 
@@ -87,8 +87,9 @@ let Experience = () => {
                     </div>
                 </div>
             </div>
+            
         </div>
-    )
+    );
 }
 
 export default Experience;
