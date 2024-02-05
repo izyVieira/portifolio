@@ -5,6 +5,8 @@ import foto1 from '../../public/foto1.jpg'
 
 let About = () => {
 
+    let linkWpp = "https://api.whatsapp.com/send?phone=5518996937347&text=Ola,%20achei%20seu%20portf%C3%B3lio%20interessante,%20podemos%20conversar?"
+    
     return (
         <>
             <div 
@@ -33,16 +35,18 @@ let About = () => {
                         Sou desenvolvedora full-stack com 2 anos de
                         experiência usando React e NodeJS.
                     </p>
-
-                    <button 
-                        className="hover:bg-purple-950 text-white font-bold 
-                            py-2 px-4 rounded-full mt-8"
-                        style={{
-                            background: '#A12AAB'
-                        }}
-                        onClick={{}}>
-                        Contate-me
-                    </button>
+                    
+                    <a href={linkWpp} target="_blank" rel="noopener noreferrer">
+                        <button 
+                            className="hover:bg-purple-950 text-white font-bold 
+                                py-2 px-4 rounded-full mt-8"
+                            style={{
+                                background: '#A12AAB'
+                            }}>
+                            Contate-me
+                        </button>
+                    </a>
+                    
 
                 </div>
 
