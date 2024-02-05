@@ -52,14 +52,14 @@ let About = () => {
 
             </div>
 
-            <div className="flex items-center justify-center"> 
+            <div className="flex items-center justify-center">
 
-                <div className="bg-black bg-opacity-50 p-6 rounded-lg  mt-10" 
-                    style={{maxWidth: "65%"}}>
+                <div className="bg-black bg-opacity-50 p-6 rounded-lg mt-10" style={{ maxWidth: "65%" }}>
 
                     <h3 className="text-white text-3xl mb-4">Sobre mim</h3>
 
-                    <div className="flex space-x-12">
+                    <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-12">
+
                         <div className="mb-4 sm:mb-0">
                             <Image className="rounded-full"
                                 src={foto1}
@@ -68,15 +68,15 @@ let About = () => {
                             />
                         </div>
 
-                        <div className="bg-gradient-to-r from-fuchsia-700 p-6 rounded-lg" style={{display: 'inline-block'}}>
-                            <p>Especialização em Desenvolvimento Web:
-                                Proficiência em front-end e back-end.
-                                Tecnologias dominadas: Node.js, JavaScript, HTML/CSS, React, Next.js, MongoDB e MySQL.
+                        <div className="bg-gradient-to-r from-fuchsia-700 p-6 rounded-lg">
+                            <p className="text-white">Especialização em Desenvolvimento Web:
+                            Proficiência em front-end e back-end.
+                            Tecnologias dominadas: Node.js, JavaScript, HTML/CSS, React, Next.js, MongoDB e MySQL.
                             </p>
                         </div>
 
                     </div>
-                    
+
                 </div>
 
             </div>

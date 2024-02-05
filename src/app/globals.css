@@ -58,36 +58,6 @@ body {
     }
 }
 
-.circle2 {
-    position: fixed;
-    width: 250px;
-    height: 250px;
-    background: linear-gradient(to bottom, #9E34A7 30%, #dd47eb 10%);
-    filter: blur(90px);
-    margin-top: -250px;
-    z-index: -1;
-
-    @screen sm {
-        width: 200px;
-        height: 200px;
-    }
-
-    @screen md {
-        width: 200px;
-        height: 200px;
-    }
-
-    @screen lg {
-        width: 200px;
-        height: 200px;
-    }
-
-    @screen xl {
-        width: 200px;
-        height: 200px;
-    }
-}
-
 .container-about {
     margin-top: 80px;
 }
