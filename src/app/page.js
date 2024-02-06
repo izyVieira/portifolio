@@ -9,7 +9,7 @@ let Home = () => {
         <>
             <NavBar/>
                 <div className="flex items-center justify-center"> 
-                    <div className="container border" style={{maxWidth: "80%", margin: "auto"}}> 
+                    <div className="container" style={{maxWidth: "80%", margin: "auto"}}> 
                         <div className="circle"></div>
                         <About/>
                         <Experience/>

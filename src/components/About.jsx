@@ -11,7 +11,7 @@ let About = () => {
         <>
             <div 
                 className="
-                    flex flex-col sm:flex-row items-center sm:space-x-4 // Adicionei items-center aqui
+                    flex flex-col sm:flex-row items-center sm:space-x-4 
                     md:space-x-8 lg:space-x-12 xl:space-x-40 ml-2 sm:ml-4 
                     md:ml-8 lg:ml-16 xl:ml-40 container-about justify-center">
 
@@ -25,7 +25,7 @@ let About = () => {
 
                 <div>
                     <h1 className="text-4xl sm:text-5xl">
-                        Oie, eu sou a Isis
+                        Oie, eu sou Isis Vieira
                     </h1>
 
                     <p className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-96 mt-3" 
@@ -58,17 +58,17 @@ let About = () => {
 
                     <h3 className="text-white text-3xl mb-4">Sobre mim</h3>
 
-                    <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-12">
+                    <div className="flex flex-col sm:flex-row sm:space-y-0 sm:space-x-12">
 
-                        <div className="mb-4 sm:mb-0">
+                       {/* { <div className="mb-4 sm:mb-0">
                             <Image className="rounded-full"
                                 src={foto1}
                                 width='250'
                                 height='250'
                             />
-                        </div>
+                        </div>} */}
 
-                        <div className="bg-gradient-to-r from-fuchsia-700 p-6 rounded-lg">
+                        <div className="bg-gradient-to-r from-fuchsia-700 p-6 rounded-lg h-auto">
                             <p className="text-white">Especialização em Desenvolvimento Web:
                             Proficiência em front-end e back-end.
                             Tecnologias dominadas: Node.js, JavaScript, HTML/CSS, React, Next.js, MongoDB e MySQL.
