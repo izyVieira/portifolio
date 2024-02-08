@@ -65,3 +65,11 @@ body {
 .rentagulo-degrade {
     background: linear-gradient(to bottom, purple, black);
 }
+
+.cor-detalhes {
+    background-color: #66196D;
+}
+
+.cor-detalhes1 {
+    background-color: #a827b4;
+}

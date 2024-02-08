@@ -32,7 +32,7 @@ let About = () => {
                         style={{
                             fontSize: '20px'
                         }}>
-                        Sou desenvolvedora full-stack com 2 anos de
+                        Sou desenvolvedora {/*full-stack*/} com 2 anos de
                         experiência usando React e NodeJS.
                     </p>
                     
