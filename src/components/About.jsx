@@ -60,14 +60,6 @@ let About = () => {
 
                     <div className="flex flex-col sm:flex-row sm:space-y-0 sm:space-x-12">
 
-                       {/* { <div className="mb-4 sm:mb-0">
-                            <Image className="rounded-full"
-                                src={foto1}
-                                width='250'
-                                height='250'
-                            />
-                        </div>} */}
-
                         <div className="bg-gradient-to-r from-fuchsia-700 p-6 rounded-lg h-auto">
                             <p className="text-white">Especialização em Desenvolvimento Web:
                             Proficiência em front-end e back-end.

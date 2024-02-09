@@ -73,3 +73,23 @@ body {
 .cor-detalhes1 {
     background-color: #a827b4;
 }
+
+.exp-tam {
+    /* position: absolute !important; */
+    @screen sm {
+        max-width: 80% !important;
+    }
+
+    @screen md {
+        max-width: 66% !important;
+    }
+
+    @screen lg {
+        max-width: 90% !important;
+    }
+
+    @screen xl {
+        /* width: 1000px; */
+        max-width: 70% !important;
+    }
+}
