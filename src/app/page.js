@@ -1,23 +1,23 @@
-import Image from "next/image";
-import NavBar from '../components/NavBar'
-import About from "@/components/About";
-import Experience from "@/components/Experience";
-import Footer from "@/components/Footer";
+import HeroSection from "../components/HeroSection";
+import Navbar from "../components/NavBar";
+import AboutSection from "../components/AboutSection";
+import ProjectsSection from "../components/ProjectsSection";
+import EmailSection from "../components/EmailSection";
+import Footer from "../components/Footer";
+import AchievementsSection from "../components/AchievementsSection";
 
-let Home = () => {
+export default function Home() {
     return (
-        <>
-            <NavBar/>
-                <div className="flex items-center justify-center"> 
-                    <div className="container" style={{maxWidth: "80%", margin: "auto"}}> 
-                        <div className="circle"></div>
-                        <About/>
-                        <Experience/>
-                    </div>
+        <main className="flex min-h-screen flex-col bg-[#121212]">
+            <Navbar />
+                <div className="container mt-24 mx-auto px-12 py-4">
+                    <HeroSection />
+                    <AchievementsSection />
+                    <AboutSection />
+                    <ProjectsSection />
+                    <EmailSection />
                 </div>
-            <Footer/>
-        </>
-    )
+            <Footer />
+        </main>
+    );
 }
-
-export default Home;

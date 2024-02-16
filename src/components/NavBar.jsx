@@ -1,111 +1,67 @@
-'use client'
-import React, { useState } from "react"
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
+import NavLink from "../components/NavLink";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import MenuOverlay from "../components/MenuOverlay";
 
-let NavBar = () => {
+let navLinks = [
+  {
+    title: "Sobre Mim",
+    path: "#about",
+  },
+  {
+    title: "Projetos",
+    path: "#projects",
+  },
+  {
+    title: "Contato",
+    path: "#contact",
+  },
+];
 
+let Navbar = () => {
+  let [navbarOpen, setNavbarOpen] = useState(false);
 
-    let [obterClick, definirClick] = useState(false)
+  return (
+    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+        <Link
+          href={"/"}
+          className="md:text-5xl text-white font-semibold"
+        >
+          
+        </Link>
+        <div className="mobile-menu block md:hidden">
+          {!navbarOpen ? (
+            <button
+              onClick={() => setNavbarOpen(true)}
+              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+            >
+              <Bars3Icon className="h-5 w-5" />
+            </button>
+          ) : (
+            <button
+              onClick={() => setNavbarOpen(false)}
+              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+            >
+              <XMarkIcon className="h-5 w-5" />
+            </button>
+          )}
+        </div>
+        <div className="menu hidden md:block md:w-auto" id="navbar">
+          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <NavLink href={link.path} title={link.title} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+    </nav>
+  );
+};
 
-    let alternarNavBar = () => {
-        definirClick(!obterClick)
-    }
-
-    return (
-        <>
-            <nav>
-                <div className="max-w-7xl mx-auto px-4 sm:px6 lg:px-8">
-                    <div className="flex items-center justify-between h-16">
-
-                        <div className="flex items-center">
-                            <div className="flex-shrink-0">
-                                <a href="/" className="text-white">
-                                    Portifolio
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="hidden md:block">
-                            <div className="ml-4 flex items-center space-x-4">
-                                <a href="/" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
-                                    Sobre Mim
-                                </a>
-
-                                <a href="/" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
-                                    Experiencias
-                                </a>
-
-                                <a href="/" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
-                                    Projetos
-                                </a>
-
-                                <a href="/" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
-                                    Contato
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="md:hidden flex items-center">
-                            <button 
-                                className="inline-flex items-center justify-center p-2 rounded-md text-white md:text-white hover:text-white focus:outline-none focus:ring-2 focus:rin-inset
-                                    focus:ring-white"
-                                onClick={alternarNavBar}
-                            >
-                                {obterClick 
-                                    ?
-                                    (<svg  className="h-6 w-6"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor" >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M6 18L18 6M6 6l12 12"/>
-                                    </svg>)
-                                    :
-                                    (<svg  className="h-6 w-6"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M4 6h16M4 12h16m-7 6h7"/>
-                                    </svg>)
-                                }
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                {obterClick && (
-                    <div className="md:hidden">
-                        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                            <a href="/" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
-                                Sobre Mim
-                            </a>
-
-                            <a href="/" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
-                                Experiencias
-                            </a>
-
-                            <a href="/" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
-                                Projetos
-                            </a>
-
-                            <a href="/" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
-                                Contato
-                            </a>
-                        </div>
-                    </div>
-                )}
-            </nav>
-        </>
-    )
-
-}
-
-export default NavBar
+export default Navbar;

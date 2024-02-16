@@ -2,94 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-.app-container {
-    background: #66196D;
-    min-height: 940px;
-    width: 100%;
-    height: 100vh;
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
 }
 
 body {
-    background-color: #310435;
-    color: white;
-    overflow: auto;
-}
-
-.navBar {
-    background-color: #66196D;
-}
-
-.footer {
-    background: #A12AAB;
-}  
-
-.container {
-    position: relative;
-    overflow: auto;
-}
-
-.circle {
-    position: fixed;
-    width: 250px;
-    height: 250px;
-    background: linear-gradient(to bottom, #9E34A7 30%, #dd47eb 10%);
-    filter: blur(90px);
-    margin-top:-80px;
-    z-index: -1;
-
-    @screen sm {
-        width: 200px;
-        height: 200px;
-    }
-
-    @screen md {
-        width: 200px;
-        height: 200px;
-    }
-
-    @screen lg {
-        width: 200px;
-        height: 200px;
-    }
-
-    @screen xl {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-.container-about {
-    margin-top: 80px;
-}
-
-.rentagulo-degrade {
-    background: linear-gradient(to bottom, purple, black);
-}
-
-.cor-detalhes {
-    background-color: #66196D;
-}
-
-.cor-detalhes1 {
-    background-color: #a827b4;
-}
-
-.exp-tam {
-    /* position: absolute !important; */
-    @screen sm {
-        max-width: 80% !important;
-    }
-
-    @screen md {
-        max-width: 66% !important;
-    }
-
-    @screen lg {
-        max-width: 90% !important;
-    }
-
-    @screen xl {
-        /* width: 1000px; */
-        max-width: 70% !important;
-    }
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
